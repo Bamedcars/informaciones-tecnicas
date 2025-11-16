@@ -3,66 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Informaciones Técnicas</title>
+    <title>Informaciones Técnicas de Reparación de Coches</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f2f2f2;
             margin: 0;
-            padding: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #0d0d0d;
+            color: #e0e0e0;
         }
+
         header {
-            background: #222;
-            color: white;
-            padding: 20px;
             text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #000000, #001a33);
+            border-bottom: 2px solid #0abfff;
         }
+
+        header h1 {
+            color: #0abfff;
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 15px #0077cc;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.8;
+        }
+
         .container {
-            width: 90%;
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
+            width: 95%;
+            max-width: 1100px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
         }
+
         .product {
-            background: white;
+            background: #111;
             padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            border: 1px solid #0abfff55;
+            box-shadow: 0 0 12px #0abfff22;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
+
+        .product:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 20px #0abfff55;
+        }
+
+        .product h2 {
+            color: #0abfff;
+            font-size: 1.3em;
+        }
+
+        .product p {
+            font-size: 0.95em;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
         .btn {
-            background: #007bff;
-            color: white;
-            padding: 10px 15px;
             display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+            background: #0abfff;
+            color: #000;
             text-decoration: none;
-            border-radius: 5px;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: background 0.2s;
         }
+
         .btn:hover {
-            background: #0056b3;
+            background: #008ecc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            color: #777;
+            font-size: 0.9em;
         }
     </style>
+
 </head>
 <body>
+
     <header>
         <h1>Informaciones Técnicas de Reparación de Coches</h1>
-        <p>Guías claras, detalladas y listas para descargar</p>
+        <p>Manuales, guías y diagnósticos listos para descargar</p>
     </header>
 
     <div class="container">
+
+        <!-- PRODUCTOS (10) -->
         <div class="product">
-            <h2>Guía de Reparación – Sistema de Frenos</h2>
-            <p>Documento PDF con instrucciones detalladas para diagnóstico y reparación de frenos.</p>
-            <p><strong>Precio: 9.99€</strong></p>
-            <a class="btn" href="#">Comprar</a>
+            <h2>1. Guía Sistema de Frenos</h2>
+            <p>Diagnóstico, reparación y mantenimiento completo.</p>
+            <a class="btn" href="PAYHIP_LINK_AQUI" target="_blank">Comprar ahora</a>
         </div>
 
         <div class="product">
-            <h2>Manual de Diagnóstico Eléctrico</h2>
-            <p>Cómo identificar fallos eléctricos comunes, con diagramas y pasos prácticos.</p>
-            <p><strong>Precio: 12.99€</strong></p>
-            <a class="btn" href="#">Comprar</a>
+            <h2>2. Manual Eléctrico Básico</h2>
+            <p>Conceptos fundamentales y detección de fallos comunes.</p>
+            <a class="btn" href="PAYHIP_LINK_AQUI" target="_blank">Comprar ahora</a>
         </div>
+
+        <div class="product">
+            <h2>3. Guía Sistema de Motor</h2>
+            <p>Cómo identificar problemas en motores gasolina modernos.</p>
+            <a class="btn" href="PAYHIP_LINK_AQUI" target="_blank">Comprar ahora</a>
+        </div>
+
+        <div class="product">
+            <h2>4. Diagnóstico Motor Diésel</h2>
+            <p>Guía completa para sistemas de inyección diésel.</p>
+            <a class="btn" href="PAYHIP_LINK_AQUI" target="_blank">Comprar ahora</a>
+        </div>
+
+        <div class="product">
+            <h2>5. Manual de Transmisiones</h2>
+            <p>Fallos típicos, mantenimiento y ajustes comunes.</p>
+            <a class="btn" href="PAYHIP_LINK_AQUI" target="_blank">Comprar ahora</a>
+        </div>
+
+        <div class="product">
+            <h2>6. Suspensión y Dirección</h2>
+            <p>Diagnóstico de vibraciones, ruidos y desgaste.</p>
+            <a class="btn" href="PAYHIP_LINK_AQUI" target="_blank">Comprar ahora</a>
+        </div>
+
+        <div class="product">
+            <h2>7. Aire Acondicionado Automotriz</h2>
+            <p>Sistema, recarga, fugas y reparación profesional.</p>
+            <a class="btn" href="PAYHIP_LINK_AQUI" target="_blank">Comprar ahora</a>
+        </div>
+
+        <div class="product">
+            <h2>8. Manual de ABS & ESP</h2>
+            <p>Cómo diagnosticar sensores, actuadores y centralitas.</p>
+            <a class="btn" href="PAYHIP_LINK_AQUI" target="_blank">Comprar ahora</a>
+        </div>
+
+        <div class="product">
+            <h2>9. Sistema de Escape & Catalizador</h2>
+            <p>Diagnóstico de ruidos, fugas y fallos de emisiones.</p>
+            <a class="btn" href="PAYHIP_LINK_AQUI" target="_blank">Comprar ahora</a>
+        </div>
+
+        <div class="product">
+            <h2>10. Guía de Mantenimiento General</h2>
+            <p>Métodos profesionales para extender la vida del vehículo.</p>
+            <a class="btn" href="PAYHIP_LINK_AQUI" target="_blank">Comprar ahora</a>
+        </div>
+
     </div>
+
+    <footer>
+        © 2025 Documentación Técnica Automotriz — Todos los derechos reservados
+    </footer>
+
 </body>
 </html>
